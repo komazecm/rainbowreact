@@ -1,0 +1,97 @@
+.NavItems{
+    background: linear-gradient(90deg,rgba(125, 231, 169, 0.603), rgba(243, 239, 242, 0.603));
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+
+}
+
+.logo{
+    color: white;
+    justify-self: start;
+    margin-left: 0.8rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap:10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+li{
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1rem;
+    margin-left: 1rem;
+}
+li a{
+    color: white;
+    text-decoration: none;
+ }
+
+.nav-links:hover{
+    background-color:  rgba(125, 231, 169, 0.603);
+    color: rgba(245, 239, 243, 0.925);
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+    padding: .8rem;
+}
+
+@media screen and (max-width: 960px) {
+    .NavItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background:  rgba(125, 231, 169, 0.603);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color:   rgba(236, 90, 205, 0.582);
+        border-radius: 0;
+    }
+  
+    .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+
+    Button {
+        display: none;
+    }
+}
