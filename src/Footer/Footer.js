@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 const data = {
-    email: "office@learnenglish.com",
+    email: "office@rainbow.com",
     phone: "+38111263565",
     address: "Milana Bartoša 20, Beograd"
 }
