@@ -9,10 +9,6 @@ class Navbar extends React.Component {
         clicked: false,
     }
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
-
     like() {
         alert("Sviđa vam se ova stranica!");
     }
@@ -20,7 +16,7 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="NavItems">
-                <h1 className="logo"><Link to="/" className="logo">Rainbow School</Link></h1>
+                <h1 className="logo"><Link to="/" className="logo">RainbowSchool</Link></h1>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
                         return (
