@@ -79,3 +79,19 @@ body{
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 960px) {
+    .card-grid {
+     margin-left: 5%;  
+     padding-right: 0;
+     align-items: left;
+     padding-left: 0;
+    }
+
+    .card-text{
+     margin-left: 10%;  
+     padding-right: 0;
+     align-items: left;
+     padding-left: 0;
+    }
+
+}
